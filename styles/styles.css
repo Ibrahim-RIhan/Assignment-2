@@ -79,6 +79,10 @@ main {
     width: 1440px;
     height: 700px;
 }
+.banner-image{
+    display: flex;
+    justify-content: center;
+}
 
 /* Features Section  */
 .feature-section {
@@ -216,54 +220,55 @@ main {
     filter: grayscale(100%);
 }
 
-/* Personal section  submit  */
+/* Personal section  Blogs */
 
-.submit {
+.blogs {
 
     margin-top: 150px;
 
 
 }
 
-.submit-title {
+.blogs-title {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
 
 }
 
-.submit-container {
-    display: flex;
-    justify-content: space-around;
-    /* border: 1px solid black; */
+.blogs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 26px;
     padding-bottom: 30px;
+    margin-top: 100px;
 }
 
-.submit-headers {
-    font-size: 35px;
-    border-left: solid rgb(31, 155, 93);
-    padding-left: 10px;
+.blog{
+    display: flex;
+    gap: 20px;
 }
 
-#name-box {
-    height: 50px;
-    width: 300px;
-    text-align: center;
+.blog-image img{
+    width: 200px;
+    height: 150px;
 }
+/* .blog-info {
+    margin-left: 16px;
+    align-content: flex-start;
+} */
 
-#email-box {
-    height: 50px;
-    width: 300px;
-    text-align: center;
-}
-
-#idea-box {
-    height: 100px;
-    width: 400px;
+.blog-title {
     font-size: 20px;
-    text-align: center;
-    margin-bottom: 30px;
+
 }
+
+.blog-author {
+    font-size: 16px;
+    color: #9F9F9F;
+    
+}
+
 
 /* Footer */
 
@@ -310,7 +315,10 @@ main {
     }
 
     .banner-image img {
-        width: 50%;
+        height: 100%;
+        width: 100%;
+      
+      
     }
 
     /* Features Section  */
@@ -382,12 +390,16 @@ main {
         grid-row-gap: 30px;
     }
     /* Submit Section  */
-    .submit-container{
-        flex-direction: column;
+    .blogs-container{
+       grid-template-columns: repeat(1, 1fr);
         width: 100%;
         
     }
-    .form-container{
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-image img{
         width: 100%;
     }
 
