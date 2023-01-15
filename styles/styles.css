@@ -21,10 +21,7 @@ main {
 }
 
 /* Nav Bar  */
-/* .nav-bar{
-    background: #FF900E1A;
 
-} */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -79,12 +76,17 @@ main {
     width: 1440px;
     height: 700px;
 }
-.banner-image{
+
+.banner-image {
     display: flex;
     justify-content: center;
 }
 
 /* Features Section  */
+
+
+
+
 .feature-section {
     display: flex;
     align-items: center;
@@ -101,6 +103,9 @@ main {
 }
 
 /* Love & Enjoy  */
+
+
+
 
 .love-enjoy {
     display: flex;
@@ -129,7 +134,6 @@ main {
 
 }
 
-.love-enjoy-description {}
 
 .info-title {
     font-weight: 700;
@@ -146,26 +150,30 @@ main {
 }
 
 .image-title {
-    width: 300px;
-    height: 100px;
     position: absolute;
-    bottom: 100px;
-    left: -50px;
-    background-color: #FF900E;
-    padding: 20px, 0px;
-    border-radius: 8px;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    line-height: 1px;
 
 }
 
+
+.experience-button {
+    position: absolute;
+    background-color: #FF900E;
+    color: white;
+    padding: 23px;
+    font-weight: 700;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid white;
+    text-align: center;
+    left: -20px;
+    bottom: -20px;
+}
+
+
+
 .facts {
 
-    /* 
-    position: relative;
-    left: 80px; */
+
     margin-bottom: 120px;
 
 }
@@ -188,14 +196,21 @@ main {
     transition:
 }
 
+.icon:hover {
+    transform: scale(100%);
+    font-size: 1.5em;
+}
+
 .icon {
     border: 1px solid #FF900E;
     border-radius: 5px;
     padding: 30px;
     text-align: center;
-    /* transform: rotate(70deg); */
+    border: 1px solid black;
+    transition: all 0.5s;
 
 }
+
 
 /* Our Sponser Section  */
 
@@ -244,19 +259,16 @@ main {
     margin-top: 100px;
 }
 
-.blog{
+.blog {
     display: flex;
     gap: 20px;
 }
 
-.blog-image img{
+.blog-image img {
     width: 200px;
     height: 150px;
 }
-/* .blog-info {
-    margin-left: 16px;
-    align-content: flex-start;
-} */
+
 
 .blog-title {
     font-size: 20px;
@@ -266,7 +278,7 @@ main {
 .blog-author {
     font-size: 16px;
     color: #9F9F9F;
-    
+
 }
 
 
@@ -283,6 +295,8 @@ main {
     margin-bottom: 200px;
 }
 
+/*============================== Reponsive Css================================== */
+
 @media screen and (max-width:677px) {
     .hide {
         display: none;
@@ -294,9 +308,9 @@ main {
         position: absolute;
     }
 
-    main {
+    /* main {
         margin: 0;
-    }
+    } */
 
     .header {
         width: 100%;
@@ -310,18 +324,17 @@ main {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .banner-section {
-        width: 100%;
-    }
 
     .banner-image img {
         height: 100%;
         width: 100%;
-      
-      
+
+
     }
 
     /* Features Section  */
+
+
     .feature-section {
         width: 100%;
         flex-direction: column;
@@ -389,17 +402,22 @@ main {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 30px;
     }
+
     /* Submit Section  */
-    .blogs-container{
-       grid-template-columns: repeat(1, 1fr);
+
+
+    .blogs-container {
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
-        
+
     }
-    .blog{
+
+    .blog {
         flex-direction: column;
         align-items: center;
     }
-    .blog-image img{
+
+    .blog-image img {
         width: 100%;
     }
 
