@@ -1,7 +1,8 @@
-/* Common Styles  */
 /* Font  */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
+
+/* Common Styles  */
 body {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
@@ -48,6 +49,7 @@ main {
 
 }
 
+/* Banner =============== */
 .banner-section {
     display: grid;
     grid-template-rows: repeat(1 1fr);
@@ -170,13 +172,17 @@ main {
 }
 
 
-
+/* Some Facts Section    +++++ */
 .facts {
 
-
+    display: grid;
+    justify-content: flex-start;
     margin-bottom: 120px;
 
 }
+
+/* Achievemnets Section  */
+
 
 .achivements {
     display: flex;
@@ -295,7 +301,7 @@ main {
     margin-bottom: 200px;
 }
 
-/*============================== Reponsive Css================================== */
+/*============================== Responsive Css================================== */
 
 @media screen and (max-width:677px) {
     .hide {
@@ -305,17 +311,19 @@ main {
     body {
         width: 100%;
         margin: 0;
-        position: absolute;
+        overflow-x: hidden;
     }
 
-    /* main {
+    main {
         margin: 0;
-    } */
+    }
 
+    /* Header============ */
     .header {
         width: 100%;
     }
 
+    /* Nav-bar============== */
     .nav-container {
         flex-direction: column;
     }
@@ -324,7 +332,7 @@ main {
         grid-template-columns: repeat(1, 1fr);
     }
 
-
+    /* Banner ================ */
     .banner-image img {
         height: 100%;
         width: 100%;
@@ -403,7 +411,7 @@ main {
         grid-row-gap: 30px;
     }
 
-    /* Submit Section  */
+    /* Blogs Section  */
 
 
     .blogs-container {
