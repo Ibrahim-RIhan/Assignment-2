@@ -112,6 +112,7 @@ main {
 .love-enjoy {
     display: flex;
     justify-content: space-around;
+    gap: 100px;
     margin-bottom: 120px;
 }
 
@@ -303,7 +304,7 @@ main {
 
 /*============================== Responsive Css================================== */
 
-@media screen and (max-width:677px) {
+@media screen and (max-width:576px) {
     .hide {
         display: none;
     }
